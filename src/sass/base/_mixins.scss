@@ -3,8 +3,21 @@
         content: '';
         position: absolute;
         z-index: -1;
-        top: -18px;
+        top: -8px;
         left: -13px;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+    }
+}
+@mixin before_circle_img {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -8px;
+        left: 9px;
         width: 36px;
         height: 36px;
         border-radius: 100%;
