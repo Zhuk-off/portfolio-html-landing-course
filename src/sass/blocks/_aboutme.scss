@@ -24,6 +24,9 @@
         padding-left: 11px;
         padding-top: 6px;
     }
+    &__divider{
+        margin: 0;
+    }
     &__text {
         padding-top: 20px;
         font-style: normal;
@@ -42,7 +45,7 @@
     .skill {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 6fr;
         grid-template-rows: auto 2fr;
         grid-template-areas:
             'img title'
@@ -62,7 +65,7 @@
             @include before_circle;
             &::before {
                 top: 0px;
-                left: 17px;
+                left: 0px;
             }
         }
         &__title {
