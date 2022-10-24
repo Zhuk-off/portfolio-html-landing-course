@@ -15,7 +15,6 @@ const lines = document.querySelectorAll('.skills__quality-graphic-load');
 
 percents.forEach((p, i) => {
     const percent = Number.parseInt(p.innerHTML);
-    console.log(percent);
     if (percent < 0) {
         lines[i].style.width = '0%';
         return;
