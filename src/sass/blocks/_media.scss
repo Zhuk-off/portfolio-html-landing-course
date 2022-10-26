@@ -3,11 +3,13 @@
         display: none;
     }
 }
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
     }
     .aboutme {
+        padding-top: 80px;
         &__wrapper {
             column-gap: 30px;
             padding: 0;
@@ -16,7 +18,26 @@
             column-gap: 30px;
         }
     }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 60px 0 0 0;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 100px;
+        }
+    }
+    .skills {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            justify-items: center;
+        }
+        &__qualities {
+            padding-top: 80px;
+        }
+    }
 }
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
@@ -34,7 +55,18 @@
             grid-template-columns: 1fr 10fr;
         }
     }
+    .resume {
+        &__wrapper {
+            column-gap: 25px;
+        }
+    }
+    .skills {
+        &__qualities {
+            column-gap: 30px;
+        }
+    }
 }
+
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
@@ -65,7 +97,36 @@
             grid-template-columns: 1fr 5fr;
         }
     }
+    .divider {
+        margin: 10px auto 0 auto;
+    }
+    .resume {
+        padding-top: 45px;
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-rows: min-content;
+            grid-auto-rows: min-content;
+            gap: 20px;
+        }
+        &__item {
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+        }
+        &__qualities {
+            padding-top: 40px;
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        }
+    }
 }
+
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
@@ -93,7 +154,6 @@
         background: url('../img/main_bg.jpg') no-repeat 60% / cover;
         &__btns {
             margin-top: 30px;
-        
         }
     }
     .aboutme {
@@ -106,6 +166,23 @@
         }
         .skill {
             grid-template-columns: 1fr 6fr;
+        }
+    }
+    .skills {
+        &__qualities {
+            grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+            row-gap: 20px;
+        }
+    }
+}
+
+@media (max-height: 510px) {
+    .menu {
+        &__social {
+            display: none;
+        }
+        &__block {
+            padding-top: 80px;
         }
     }
 }
