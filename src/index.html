@@ -120,19 +120,19 @@
     <body>
         <aside class="sidepanel">
             <div class="sidepanel__wrapper">
-                <a href="#" class="sidepanel__link">
+                <a href="https://www.facebook.com/" class="sidepanel__link">
                     <img
                         src="icons/social/facebook_rotate.svg"
                         alt="facebook social"
                     />
                 </a>
-                <a href="#" class="sidepanel__link">
+                <a href="https://www.instagram.com/" class="sidepanel__link">
                     <img
                         src="icons/social/instagram_rotate.svg "
                         alt="instagram"
                     />
                 </a>
-                <a href="#" class="sidepanel__link">
+                <a href="https://github.com/" class="sidepanel__link">
                     <img src="icons/social/github_rotate.svg" alt="github" />
                 </a>
                 <div class="sidepanel__divider"></div>
@@ -157,22 +157,34 @@
                 </div>
                 <nav>
                     <ul class="menu__list">
-                        <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-                        <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-                        <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-                        <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                        <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                        <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                        <li class="menu__link">
+                            <a href="#aboutme">ПРО МЕНЯ</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#resume">МОЙ ОПЫТ</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#skills">МОИ НАВЫКИ</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#portfolio">МОИ РАБОТЫ</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#price">ПРАЙС-ЛИСТ</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="#contacts">КОНТАКТЫ</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="menu__social">
-                    <a href="#"
+                    <a href="https://github.com/"
                         ><img src="icons/social/github.svg" alt="github"
                     /></a>
-                    <a href="#"
+                    <a href="https://www.instagram.com/"
                         ><img src="icons/social/instagram.svg" alt="instagram"
                     /></a>
-                    <a href="#"
+                    <a href="https://www.facebook.com/"
                         ><img src="icons/social/facebook.svg" alt="facebook"
                     /></a>
                 </div>
@@ -193,12 +205,12 @@
                     Я web-разработчик из города Москва
                 </h1>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link btn">Портфолио</a
-                    ><a href="#" class="promo__link">Про меня</a>
+                    <a href="#portfolio" class="promo__link btn">Портфолио</a
+                    ><a href="#aboutme" class="promo__link">Про меня</a>
                 </div>
             </div>
         </section>
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <div class="container">
                 <div class="aboutme__wrapper">
                     <div class="aboutme__photo">
@@ -283,7 +295,7 @@
                 </div>
             </div>
         </section>
-        <section class="resume">
+        <section class="resume" id="resume">
             <div class="container">
                 <h2 class="title title_fz16 title__section-title">Опыт</h2>
                 <div class="title title_fz36 title__section-subtitle">
@@ -411,7 +423,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <h2 class="title title_fz16 title__section-title">Навыки</h2>
                 <div class="title title_fz36 title__section-subtitle">
@@ -585,7 +597,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="title title_fz16 title__section-title">Портфолио</h2>
                 <div class="title title_fz36 title__section-subtitle">
@@ -594,28 +606,64 @@
                 <div class="divider"></div>
 
                 <div class="portfolio__wrapper">
-                    <a href="#" class="portfolio__item"
-                        ><img src="img/works/uber.jpg" alt="uber"
-                    /></a>
-                    <a href="#" class="portfolio__item"
-                        ><img src="img/works/pulse.jpg" alt="pulse"
-                    /></a>
-                    <a href="#" class="portfolio__item"
-                        ><img src="img/works/bread.jpg" alt="test"
-                    /></a>
-                    <a href="#" class="portfolio__item vertical"
-                        ><img src="img/works/plans.jpg" alt="test"
-                    /></a>
-                    <a href="#" class="portfolio__item"
-                        ><img src="img/works/ipad.jpg" alt="test"
-                    /></a>
-                    <a href="#" class="portfolio__item horizontal"
-                        ><img src="img/works/mac.jpg" alt="test"
-                    /></a>
+                    <a href="#" class="portfolio__item">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/uber.webp"
+                            />
+                            <img src="img/works/uber.jpg" alt="uber" />
+                        </picture>
+                    </a>
+                    <a href="#" class="portfolio__item">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/pulse.webp"
+                            />
+                            <img src="img/works/pulse.jpg" alt="pulse" />
+                        </picture>
+                    </a>
+                    <a href="#" class="portfolio__item">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/bread.webp"
+                            />
+                            <img src="img/works/bread.jpg" alt="test" />
+                        </picture>
+                    </a>
+                    <a href="#" class="portfolio__item vertical">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/plans.webp"
+                            />
+                            <img src="img/works/plans.jpg" alt="test" />
+                        </picture>
+                    </a>
+                    <a href="#" class="portfolio__item">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/ipad.webp"
+                            />
+                            <img src="img/works/ipad.jpg" alt="test" />
+                        </picture>
+                    </a>
+                    <a href="#" class="portfolio__item horizontal">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="img/works/mac.webp"
+                            />
+                            <img src="img/works/mac.jpg" alt="test" />
+                        </picture>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <h2 class="title title_fz16 title__section-title">
                     Прайс-лист
@@ -670,7 +718,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
                     <div class="contacts__photo">
@@ -688,19 +736,28 @@
                             Любым удобным для вас способом:
                         </div>
                         <div class="contacts__social">
-                            <a href="#" class="contacts__link">
+                            <a
+                                href="https://www.facebook.com/"
+                                class="contacts__link"
+                            >
                                 <img
                                     src="icons/social/facebook.svg"
                                     alt="facebook"
                                 />
                             </a>
-                            <a href="#" class="contacts__link">
+                            <a
+                                href="https://web.telegram.org/"
+                                class="contacts__link"
+                            >
                                 <img
                                     src="icons/social/telegram.svg"
                                     alt="telegram"
                                 />
                             </a>
-                            <a href="#" class="contacts__link">
+                            <a
+                                href="https://www.instagram.com/"
+                                class="contacts__link"
+                            >
                                 <img
                                     src="icons/social/instagram.svg"
                                     alt="instagram"
@@ -717,6 +774,7 @@
                                     name="name"
                                     id="name"
                                     type="text"
+                                    aria-label="name input"
                                 />
                                 <label for="name">Ваше имя</label>
                             </div>
@@ -726,21 +784,23 @@
                                     name="email"
                                     id="email"
                                     type="email"
+                                    aria-label="email input"
+
                                 />
                                 <label for="email">Ваша почта</label>
                             </div>
                             <div class="contacts__textarea">
-                                <textarea name="text" id="text"></textarea>
+                                <textarea name="text" id="text" aria-label="text input"></textarea>
                                 <label for="text">Ваше сообщение</label>
                             </div>
                             <div class="contacts__triggers">
                                 <div class="contacts__wrapper-btn">
-                                    <button class="contacts__btn btn">
+                                    <button class="contacts__btn btn" aria-label="submit button">
                                         Отправить сообщение
                                     </button>
                                 </div>
                                 <div class="contacts__policy">
-                                    <input required type="checkbox" />
+                                    <input required type="checkbox" aria-label="checkbox input confirm policy"/>
                                     <span
                                         >Я согласен(а) с
                                         <a href="/policy.html"

@@ -102,6 +102,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
+        color: black;
     }
     &__triggers {
         grid-column: 1 / 3;
@@ -117,5 +118,8 @@
         align-items: center;
         font-size: 12px;
         line-height: 14px;
+        a {
+            color: #0049ff;
+        }
     }
 }
