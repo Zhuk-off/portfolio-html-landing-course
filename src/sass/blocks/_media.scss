@@ -53,6 +53,13 @@
     .price {
         padding-top: 80px;
     }
+    .contacts {
+        padding-top: 80px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 350px 585px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -64,7 +71,7 @@
             font-size: 30px;
         }
     }
-    
+
     .aboutme {
         &__skills {
             grid-template-columns: 1fr;
@@ -85,7 +92,19 @@
     }
     .price {
         &__wrapper {
-            padding: 40px 0 0 0;;
+            padding: 40px 0 0 0;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 1fr);
         }
     }
 }
@@ -166,6 +185,16 @@
             justify-content: center;
         }
     }
+    .contacts {
+        padding-top: 40px;
+        .divider {
+            margin: 0;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 270px);
+            column-gap: 6px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -220,6 +249,34 @@
             row-gap: 5px;
             grid-template-columns: repeat(auto-fit, 295px);
             grid-auto-rows: minmax(45px, auto);
+            justify-content: center;
+        }
+    }
+    .contacts {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px auto / 1fr;
+            column-gap: unset;
+            row-gap: 28px;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+        &__triggers {
+            grid-column: unset;
+            row-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+        }
+        &__btn {
+            grid-row: 2 / 3;
+        }
+        &__policy {
+            grid-row: 1 / 2;
+            justify-content: center;
+        }
+        &__wrapper-btn {
+            display: flex;
             justify-content: center;
         }
     }
